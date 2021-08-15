@@ -1,0 +1,58 @@
+/*** coche keyframe ***/
+
+@keyframes reverseAnimation {
+  0% {
+    margin-right: 58px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+@keyframes animation {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 58px;
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*** appearance keyframe ***/
+
+@keyframes appearance {
+  0% {
+    opacity: 0%;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+/*** heart keyframe ***/
+
+@keyframes heart__color {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
