@@ -35,6 +35,11 @@ main {
     font-size: 62px;
     font-family: "pattaya";
     font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 10px 5px 2px rgb(146, 140, 140);
+    @media (max-width: 568px) {
+      font-size: 42px;
+    }
   }
 }
 
