@@ -36,7 +36,7 @@ main {
     font-family: "pattaya";
     font-weight: bold;
     margin-bottom: 5px;
-    text-shadow: 10px 5px 2px rgb(146, 140, 140);
+    text-shadow: 10px 5px 2px rgb(184, 184, 184);
     @media (max-width: 568px) {
       font-size: 42px;
     }
@@ -189,6 +189,7 @@ main {
   &__container {
     width: 100%;
     margin: auto;
+   
     @media (min-width: 1000px) {
       display: flex;
     }
@@ -229,7 +230,20 @@ main {
   margin-top: 0;
   margin-bottom: 18px;
   position: relative;
+  transition: transform .2s ease-in-out ;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: $darken-box-shadow    
+  }
+  &:hover img{
+    transform: scale(1.04);
+  }
+  
   .imgContainer {
+    img{
+      transition: transform 0.2s 0.2s linear;
+    }
+   
     &--note {
       img {
         height: 155%;
