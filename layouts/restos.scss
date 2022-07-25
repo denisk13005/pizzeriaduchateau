@@ -83,7 +83,6 @@ section {
   h3 {
     display: block;
     padding-left: 20px;
-    margin-bottom: 20px;
     font-family: "Shrikhand";
   }
 }
@@ -94,22 +93,9 @@ section {
   }
 }
 .entrance {
+  margin-top: 20px;
   opacity: 0;
   animation: appearance 1s 0.1s ease-in-out forwards;
-  @media (min-width: 1080px) {
-    width: 33%;
-  }
-}
-.dish {
-  opacity: 0;
-  animation: appearance 1s 0.2s ease-in-out forwards;
-  @media (min-width: 1080px) {
-    width: 33%;
-  }
-}
-.desserts {
-  opacity: 0;
-  animation: appearance 1s 0.3s ease-in-out forwards;
   @media (min-width: 1080px) {
     width: 33%;
   }
