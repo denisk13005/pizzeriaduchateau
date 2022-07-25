@@ -214,42 +214,23 @@ main {
   &:hover img {
     transform: scale(1.04);
   }
+  @media screen and (min-width: 1050px) {
+    width: 22%;
+    height: 35vh;
+  }
 
   .imgContainer {
+    width: 100%;
+    height: 70%;
     img {
+      width: 100%;
+      height: 100%;
       transition: transform 0.2s linear;
     }
 
     &--note {
       img {
         height: 155%;
-      }
-    }
-  }
-
-  .heart__color {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 24px;
-    bottom: 33px;
-    transform: scale(0);
-  }
-
-  .heart {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 24px;
-    bottom: 33px;
-    transform: scale(1);
-    cursor: pointer;
-
-    &:hover {
-      animation: heart 1s 1s ease-in-out both;
-
-      & + .heart__color {
-        animation: heart__color 1s ease-in-out both;
       }
     }
   }
@@ -299,6 +280,9 @@ main {
     margin-left: 14px;
     font-size: 17.5px;
     font-weight: bold;
+    @media screen and (min-width: 1050px) {
+      font-size: 32px;
+    }
   }
 
   p {
@@ -307,6 +291,9 @@ main {
     font-family: "Roboto";
     font-weight: 100;
     font-size: 16.5px;
+    @media screen and (min-width: 1050px) {
+      font-size: 18px;
+    }
   }
 }
 
