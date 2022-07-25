@@ -27,12 +27,15 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 15vh;
- padding: 10px 20px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(102, 102, 111, 1) 100%);
+  padding: 10px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 111, 1) 100%
+  );
 
-  @media screen and (max-width : 1050px) {
+  @media screen and (max-width: 1050px) {
     flex-direction: column;
-
   }
 
   p {
@@ -57,14 +60,12 @@ main {
     transform: translate(-50%);
     font-size: 66px;
 
-    @media screen and (max-width:568px) {
+    @media screen and (max-width: 568px) {
       font-size: 42px;
       top: 15px;
       width: max-content;
     }
   }
-
-  
 }
 
 .localisation {
@@ -72,7 +73,11 @@ main {
   justify-content: center;
   width: 100%;
   height: 5vh;
-  background: linear-gradient(180deg, rgba(102,102,111,1) 0%, rgba(207,207,207,1) 100%); 
+  background: linear-gradient(
+    180deg,
+    rgba(102, 102, 111, 1) 0%,
+    rgba(207, 207, 207, 1) 100%
+  );
 
   a {
     display: flex;
@@ -87,7 +92,6 @@ main {
   }
 
   h2 {
-
     font-weight: 500;
     color: white;
   }
@@ -97,10 +101,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(207,207,207,1) 0%, rgba(241,241,241,1) 100%); 
+  background: linear-gradient(
+    180deg,
+    rgba(207, 207, 207, 1) 0%,
+    rgba(241, 241, 241, 1) 100%
+  );
   padding-bottom: 25px;
   height: 10vh;
-  span{
+  span {
     font-size: 18px;
     font-weight: 500;
     display: flex;
@@ -108,22 +116,16 @@ main {
     justify-content: space-between;
     width: 100%;
     font-size: 24px;
-    img{
+    img {
       width: 50px;
       margin: 0px 5px;
     }
   }
-  p{
+  p {
     margin-top: 25px;
     font-size: 24px;
   }
-
-  
-
- 
 }
-
-
 
 // ****************************Restaurants
 
@@ -131,7 +133,11 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(255,255,255,1) 100%); 
+  background: linear-gradient(
+    180deg,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 
   &__container {
     width: 100%;
@@ -167,12 +173,13 @@ main {
 
   h2 {
     font-size: 42px;
-    padding-top: 54px;
+    padding-top: 25px;
     font-weight: bold;
     margin-bottom: 23px;
     text-align: center;
     color: #cb632d;
-    text-shadow: 10px 5px 2px rgba(90, 90, 90,.5);
+    text-decoration: underline;
+    margin-bottom: 50px;
   }
 }
 
@@ -186,10 +193,10 @@ main {
   margin-top: 0;
   margin-bottom: 18px;
   position: relative;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
-    box-shadow: $darken-box-shadow
+    box-shadow: $darken-box-shadow;
   }
 
   &:hover img {
@@ -198,7 +205,7 @@ main {
 
   .imgContainer {
     img {
-      transition: transform  0.2s linear;
+      transition: transform 0.2s linear;
     }
 
     &--note {
@@ -229,7 +236,7 @@ main {
     &:hover {
       animation: heart 1s 1s ease-in-out both;
 
-      &+.heart__color {
+      & + .heart__color {
         animation: heart__color 1s ease-in-out both;
       }
     }
@@ -300,17 +307,17 @@ main {
 .terrasse {
   text-align: center;
   padding-bottom: 50px;
-  
-  h2{
+
+  h2 {
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 22px;
     font-weight: 500;
   }
-  .imgTerrasseContainer{
+  .imgTerrasseContainer {
     width: 100%;
     height: 40vh;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
