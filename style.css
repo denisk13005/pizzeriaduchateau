@@ -277,9 +277,22 @@ main {
   font-size: 24px;
 }
 
+@media screen and (min-width: 1050px) {
+  .livraison span {
+    display: block;
+    text-align: center;
+  }
+}
+
 .livraison span img {
   width: 50px;
   margin: 0px 5px;
+}
+
+@media screen and (min-width: 1050px) {
+  .livraison span img {
+    display: none;
+  }
 }
 
 .livraison p {
