@@ -7,8 +7,8 @@
 
 body {
   background-color: #f6f6f6;
-  max-width: 1440px;
   margin: auto;
+  width: 100vw;
 }
 header {
   width: 100%;
@@ -169,4 +169,23 @@ button {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 51px;
+}
+footer {
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  .footerContainer {
+    width: 91%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(min-width:1050px) {
+      font-size: 24px;
+    }
+    @media screen and(min-width: 1440px) {
+      font-size: 48px;
+    }
+  }
 }
