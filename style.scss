@@ -144,6 +144,34 @@ main {
     margin-top: 25px;
     font-size: 24px;
   }
+  .starsContainer {
+    display: flex;
+    color: rgb(231, 200, 24);
+    align-items: center;
+    width: max-content;
+    margin-top: 20px;
+    span {
+      margin-right: 2px;
+      font-size: 24px;
+      @media screen and (max-width: 1050px) {
+        font-size: 14px;
+      }
+    }
+    span:nth-child(1) {
+      margin-top: 1px;
+      color: white;
+      color: #cb632d;
+      margin-right: 15px;
+    }
+    span:last-child {
+      width: max-content;
+      color: #cb632d;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 // ****************************Restaurants
@@ -177,11 +205,11 @@ main {
     font-size: 42px;
     padding-top: 25px;
     font-weight: bold;
-    margin-bottom: 23px;
     text-align: center;
     color: #cb632d;
     text-decoration: underline;
     margin-bottom: 50px;
+    margin-top: 25px;
   }
 }
 
