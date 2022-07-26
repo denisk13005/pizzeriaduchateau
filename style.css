@@ -385,7 +385,7 @@ main {
           transform: scale(1.04);
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 650px) {
   .restaurants__thumbnail {
     width: 40%;
   }
