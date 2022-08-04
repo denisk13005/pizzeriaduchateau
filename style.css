@@ -78,6 +78,7 @@ footer {
   color: white;
   width: 100%;
   height: 10vh;
+  margin-top: 50px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,12 +119,6 @@ footer p {
   margin-left: 25px;
 }
 
-/*.footer__container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 12px;
-}*/
 /*** page 404 ***/
 .error {
   width: 100%;
