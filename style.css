@@ -354,6 +354,7 @@ main {
 
 .livraison .starsContainer a {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .restaurants {

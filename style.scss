@@ -170,6 +170,7 @@ main {
 
     a {
       text-decoration: none;
+      white-space: nowrap;
     }
   }
 }
@@ -261,34 +262,6 @@ main {
     }
   }
 }
-
-// .imgContainer {
-//   width: 336px;
-//   height: 176px;
-//   border-radius: 20px 20px 0px 0px;
-//   overflow: hidden;
-
-//   img {
-//     width: 336px;
-//     height: 176px;
-//     object-fit: cover;
-//     object-position: bottom;
-//   }
-
-//   .new {
-//     width: 81px;
-//     height: 29px;
-//     text-align: center;
-//     line-height: 29px;
-//     color: #139273;
-//     background-color: #99e2d0;
-//     position: absolute;
-//     top: 13px;
-//     right: 12px;
-//     font-size: 13px;
-//     font-weight: bold;
-//   }
-// }
 
 .restaurants__info {
   display: flex;
