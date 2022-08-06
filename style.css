@@ -508,13 +508,28 @@ main {
 }
 
 .terrasse .imgTerrasseContainer {
-  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
   height: 40vh;
+}
+
+@media screen and (max-width: 800px) {
+  .terrasse .imgTerrasseContainer {
+    width: 100%;
+  }
 }
 
 .terrasse .imgTerrasseContainer img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .terrasse .imgTerrasseContainer img {
+    border-radius: 0;
+  }
 }
 
 footer {
