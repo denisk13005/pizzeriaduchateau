@@ -57,17 +57,18 @@ header {
 }
 section {
   font-family: "Roboto";
-  height: 100%;
   border-radius: 40px 40px 0px 0px;
   background: #f6f6f6;
-  position: relative;
-  bottom: 32px;
+  box-shadow: -10px 20px 5px rgb(221, 221, 221),
+    10px 20px 5px rgb(221, 221, 221);
+  padding-bottom: 15px;
+  border: 1px solid rgb(221, 221, 221);
   @media (min-width: 600px) {
     margin: auto;
     max-width: 600px;
   }
   @media (min-width: 1080px) {
-    max-width: 100%;
+    max-width: 968px;
   }
 }
 .menu__header {
@@ -87,19 +88,11 @@ section {
     font-family: "Shrikhand";
   }
 }
-.restos {
-  @media (min-width: 1080px) {
-    display: flex;
-    justify-content: space-around;
-  }
-}
+
 .entrance {
   margin-top: 20px;
   opacity: 0;
   animation: appearance 1s 0.1s ease-in-out forwards;
-  @media (min-width: 1080px) {
-    width: 33%;
-  }
 }
 
 .menu__title {
