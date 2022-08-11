@@ -38,7 +38,7 @@ main {
     flex-direction: column;
   }
   img {
-    width: 100px;
+    width: 180px;
     @media screen and (max-width: 1300px) {
       display: none;
     }
@@ -46,7 +46,7 @@ main {
 
   p {
     display: inline-block;
-    font-size: 54px;
+    font-size: 50px;
     font-family: "pattaya";
     font-weight: bold;
     margin-bottom: 5px;
@@ -76,6 +76,7 @@ main {
 .localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 5vh;
   background: linear-gradient(
@@ -241,7 +242,7 @@ main {
     width: 36%;
   }
   @media screen and (min-width: 1700px) {
-    width: 22%;
+    width: 24%;
     height: 35vh;
   }
 
@@ -253,6 +254,7 @@ main {
       width: 100%;
       height: 100%;
       transition: transform 0.2s linear;
+      object-fit: cover;
     }
 
     &--note {

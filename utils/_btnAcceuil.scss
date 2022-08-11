@@ -1,19 +1,19 @@
-@mixin btnAcceuil{
-    background-color: #f3f3f3;
-    width: 325px ;
-    height: 75px;
-    box-shadow: $box-shadow;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(105, 105, 105);
-    border: none;
-    margin: auto;
-    margin-bottom: 22px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;    
-    &:hover{
-        box-shadow: 2px 2px 10px black;
-        transform: scale(1.01);
-    }
-}
+// @mixin btnAcceuil{
+//     background-color: #f3f3f3;
+//     width: 325px ;
+//     height: 75px;
+//     box-shadow: $box-shadow;
+//     border-radius: 20px;
+//     box-shadow: 2px 2px 10px rgb(105, 105, 105);
+//     border: none;
+//     margin: auto;
+//     margin-bottom: 22px;
+//     position: relative;
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     &:hover{
+//         box-shadow: 2px 2px 10px black;
+//         transform: scale(1.01);
+//     }
+// }

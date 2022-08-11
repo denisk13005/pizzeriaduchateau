@@ -41,38 +41,6 @@ table {
 
 /*variables de couleurs*/
 /*box shadow btn acceuil*/
-/*variables de couleurs*/
-/*box shadow btn acceuil*/
-button {
-  height: 50px;
-  width: 218px;
-  margin-top: 32px;
-  border-radius: 50px;
-  -webkit-box-shadow: 2px 2px 10px grey;
-          box-shadow: 2px 2px 10px grey;
-  margin-left: 6px;
-  border: none;
-  color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  cursor: pointer;
-  position: relative;
-}
-
-button:hover {
-  opacity: 0.85;
-  -webkit-transform: scale(1.001);
-          transform: scale(1.001);
-  -webkit-box-shadow: 4px 4px 8px black;
-          box-shadow: 4px 4px 8px black;
-}
-
-button span {
-  font-size: 14px;
-  bottom: 1px;
-  font-weight: 600;
-}
-
 /*** coche keyframe ***/
 @-webkit-keyframes reverseAnimation {
   0% {
