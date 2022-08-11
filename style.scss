@@ -38,7 +38,9 @@ main {
     flex-direction: column;
   }
   img {
-    width: 100px;
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
     @media screen and (max-width: 1300px) {
       display: none;
     }
@@ -46,7 +48,7 @@ main {
 
   p {
     display: inline-block;
-    font-size: 54px;
+    font-size: 50px;
     font-family: "pattaya";
     font-weight: bold;
     margin-bottom: 5px;
@@ -76,6 +78,7 @@ main {
 .localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 5vh;
   background: linear-gradient(
@@ -133,8 +136,11 @@ main {
       font-size: 48px;
     }
     img {
-      width: 50px;
+      width: 60px;
+      height: 50px;
+      object-fit: cover;
       margin: 0px 5px;
+
       @media screen and (min-width: 1050px) {
         display: none;
       }
@@ -215,7 +221,7 @@ main {
 }
 
 .restaurants__thumbnail {
-  width: 80%;
+  width: 90%;
   height: 35vh;
   background-color: white;
   border-radius: 20px;
@@ -234,14 +240,14 @@ main {
   &:hover img {
     transform: scale(1.04);
   }
-  @media screen and(min-width:650px) {
+  @media screen and(min-width:800px) {
     width: 40%;
   }
   @media screen and (min-width: 1440px) {
     width: 36%;
   }
   @media screen and (min-width: 1700px) {
-    width: 22%;
+    width: 24%;
     height: 35vh;
   }
 
@@ -253,6 +259,7 @@ main {
       width: 100%;
       height: 100%;
       transition: transform 0.2s linear;
+      object-fit: cover;
     }
 
     &--note {
@@ -292,20 +299,13 @@ main {
     margin-left: 14px;
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 16.5px;
-
-    @media screen and (min-width: 1700px) {
-      font-size: 18px;
+    font-size: 14px;
+    @media screen and (min-width: 860px) {
+      font-size: 16px;
     }
   }
 }
 
-.fa-heart {
-  position: absolute;
-  bottom: 32px;
-  right: 26px;
-  font-size: 20px;
-}
 .terrasse {
   text-align: center;
   padding-bottom: 50px;
@@ -315,6 +315,7 @@ main {
     padding-bottom: 20px;
     font-size: 22px;
     font-weight: 500;
+
     @media screen and(min-width:1050px) {
       font-size: 48px;
       margin-bottom: 25px;
@@ -326,15 +327,14 @@ main {
     width: 70%;
     height: 40vh;
     @media screen and (max-width: 800px) {
-      width: 100%;
+      width: 90%;
     }
     img {
       width: 100%;
       height: 100%;
       border-radius: 20px;
-      @media screen and (max-width: 800px) {
-        border-radius: 0;
-      }
+      object-fit: cover;
+      object-position: bottom;
     }
   }
 }
