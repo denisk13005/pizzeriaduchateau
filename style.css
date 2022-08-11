@@ -372,7 +372,7 @@ main {
           transform: scale(1.04);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   .restaurants__thumbnail {
     width: 40%;
   }
@@ -450,12 +450,12 @@ main {
   margin-left: 14px;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 16.5px;
+  font-size: 14px;
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 860px) {
   .restaurants__name p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
