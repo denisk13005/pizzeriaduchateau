@@ -326,7 +326,7 @@ section {
   display: flex;
   width: 93%;
   max-width: 720px;
-  height: 68px;
+  height: 74px;
   margin: auto;
   margin-bottom: 12px;
   border-radius: 15px;
@@ -363,6 +363,7 @@ section {
   .menu__btn--title h3 {
     font-size: 15.2px;
     font-weight: 400;
+    margin-top: 5px;
   }
 }
 
