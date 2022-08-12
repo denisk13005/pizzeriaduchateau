@@ -110,20 +110,23 @@ section {
   display: flex;
   width: 93%;
   max-width: 720px;
-  height: 74px;
+  height: 70px;
   margin: auto;
   margin-bottom: 12px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1px 3px 5px #e9e9e9;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
-    padding-bottom: 5px;
-  }
+
   &--title {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    .chateauTitle {
+      @media screen and (max-width: 420px) {
+        margin-top: 7px;
+      }
+    }
     h3 {
       margin-top: 15px;
       margin-left: 10px;
@@ -132,7 +135,6 @@ section {
       @media (max-width: 420px) {
         font-size: 15.2px;
         font-weight: 400;
-        margin-top: 5px;
       }
       span {
         font-family: "Roboto";
