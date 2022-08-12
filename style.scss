@@ -402,13 +402,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
+  @media screen and (max-width: 768px) {
+    padding-top: 5px;
+  }
   .footerContainer {
     width: 94%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    padding-top: 30px;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       font-size: 18px;
@@ -444,8 +447,12 @@ footer {
         display: flex;
         justify-content: space-around;
         i {
+          font-size: 46px;
           cursor: pointer;
           transition: all 0.2s linear;
+          @media screen and(max-width:1440px) {
+            font-size: 32px;
+          }
           &:first-child {
             border-radius: 50%;
             &:hover {

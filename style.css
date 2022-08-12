@@ -617,6 +617,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 5px;
+  }
 }
 
 footer .footerContainer {
@@ -629,7 +636,6 @@ footer .footerContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 24px;
-  padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -683,9 +689,16 @@ footer .footerContainer .reseau .iconContainer {
 }
 
 footer .footerContainer .reseau .iconContainer i {
+  font-size: 46px;
   cursor: pointer;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 1440px) {
+  footer .footerContainer .reseau .iconContainer i {
+    font-size: 32px;
+  }
 }
 
 footer .footerContainer .reseau .iconContainer i:first-child {
