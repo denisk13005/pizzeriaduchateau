@@ -85,13 +85,22 @@
           <div class="restaurants__thumbnail">
             <a href="restos/special.html">
               <div class="imgContainer">
-                <img
-                  src="MaquettesOhmyfood/images/restaurants/special.webp"
-                  srcset="
-                    MaquettesOhmyfood/images/restaurants/special_mob.webp 768w
-                  "
-                  alt="Restaurant la note enchantée"
-                />
+                <picture>
+                  <source
+                    media="(max-width:800px)"
+                    srcset="
+                      MaquettesOhmyfood/images/restaurants/special_mob.webp
+                    "
+                  />
+                  <source
+                    media="(min-width:801px)"
+                    srcset="MaquettesOhmyfood/images/restaurants/special.webp"
+                  />
+                  <img
+                    src="MaquettesOhmyfood/images/restaurants/special.webp"
+                    alt="photo des spécialitées"
+                  />
+                </picture>
               </div>
             </a>
             <div class="restaurants__info">
@@ -155,10 +164,21 @@
     <section class="terrasse">
       <h2>Venez déguster nos pizzas en terrasse</h2>
       <div class="imgTerrasseContainer">
-        <img
-          src="./MaquettesOhmyfood/images/terrasse.webp"
-          alt="image de la terrasse de l'établissement"
-        />
+        <picture>
+          <source
+            media="(max-width:800px)"
+            srcset="./MaquettesOhmyfood/images/terrasse_mob.webp"
+          />
+          <source
+            media="(min-width:801px)"
+            srcset="./MaquettesOhmyfood/images/terrasse.webp"
+          />
+
+          <img
+            src="./MaquettesOhmyfood/images/terrasse.webp"
+            alt="image de la terrasse de l'établissement"
+          />
+        </picture>
       </div>
     </section>
     <section class="events">
