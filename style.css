@@ -501,6 +501,101 @@ main {
      object-position: bottom;
 }
 
+.events {
+  text-align: center;
+  font-size: 48px;
+  line-height: 84px;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .events {
+    font-size: 24px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+.events a {
+  display: block;
+  text-decoration: none;
+  -webkit-animation: contact 1s ease-in-out infinite;
+          animation: contact 1s ease-in-out infinite;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  margin-bottom: 20px;
+  font-size: 52px;
+}
+
+@media screen and (max-width: 1050px) {
+  .events a {
+    font-size: 28px;
+  }
+}
+
+.events a:hover {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #cb632d;
+}
+
+@media screen and (max-width: 1660px) {
+  .events h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@-webkit-keyframes contact {
+  0% {
+    scale: 0.97;
+    color: #cb632d;
+  }
+  50% {
+    scale: 1.1;
+    color: #ebdc15;
+  }
+  100% {
+    scale: 0.97;
+    color: #cb632d;
+  }
+}
+
+@keyframes contact {
+  0% {
+    scale: 0.97;
+    color: #cb632d;
+  }
+  50% {
+    scale: 1.1;
+    color: #ebdc15;
+  }
+  100% {
+    scale: 0.97;
+    color: #cb632d;
+  }
+}
+
 footer {
   width: 100%;
   display: -webkit-box;
