@@ -172,6 +172,10 @@ main {
     span:last-child {
       width: max-content;
       color: #cb632d;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     a {
@@ -394,15 +398,89 @@ main {
 }
 footer {
   width: 100%;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
+  @media screen and (max-width: 768px) {
+    padding-top: 5px;
+  }
   .footerContainer {
     width: 94%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      font-size: 18px;
+      justify-content: space-around;
+    }
+    .contactUs {
+      p {
+        &:first-child {
+          font-weight: bold;
+        }
+        &:last-child {
+          font-weight: 100;
+          font-size: 16px;
+          margin-top: 15px;
+          line-height: 26px;
+          @media screen and (max-width: 1050px) {
+            margin-top: 5px;
+            line-height: 18px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .reseau {
+      p {
+        margin-bottom: 15px;
+        font-weight: bold;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      .iconContainer {
+        display: flex;
+        justify-content: space-around;
+        i {
+          font-size: 46px;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          @media screen and(max-width:1440px) {
+            font-size: 32px;
+          }
+          &:first-child {
+            border-radius: 50%;
+            &:hover {
+              transform: scale(1.05);
+              color: blue;
+              background-color: transparent;
+              border: none;
+            }
+          }
+          &:nth-child(2) {
+            &:hover {
+              transform: scale(1.05);
+              color: rgb(255, 0, 119);
+              background-color: transparent;
+              border: none;
+            }
+          }
+          &:last-child {
+            &:hover {
+              transform: scale(1.05);
+              color: rgb(223, 219, 33);
+              background-color: transparent;
+              border: none;
+            }
+          }
+        }
+      }
+    }
     @media screen and(min-width:1050px) {
       font-size: 24px;
     }

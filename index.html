@@ -73,7 +73,7 @@
           <a
             href="https://www.google.com/search?client=firefox-b-d&q=pizza+du+chateau+marseille#lrd=0x12c9c0a60c21b209:0xf0267d021bf00b9,1,,,"
             target="_blank"
-            ><span></span> 26 avis google</a
+            ><span> 26 avis google</span></a
           >
         </div>
       </div>
@@ -85,13 +85,22 @@
           <div class="restaurants__thumbnail">
             <a href="restos/special.html">
               <div class="imgContainer">
-                <img
-                  src="MaquettesOhmyfood/images/restaurants/special.webp"
-                  srcset="
-                    MaquettesOhmyfood/images/restaurants/special_mob.webp 768w
-                  "
-                  alt="Restaurant la note enchantée"
-                />
+                <picture>
+                  <source
+                    media="(max-width:800px)"
+                    srcset="
+                      MaquettesOhmyfood/images/restaurants/special_mob.webp
+                    "
+                  />
+                  <source
+                    media="(min-width:801px)"
+                    srcset="MaquettesOhmyfood/images/restaurants/special.webp"
+                  />
+                  <img
+                    src="MaquettesOhmyfood/images/restaurants/special.webp"
+                    alt="photo des spécialitées"
+                  />
+                </picture>
               </div>
             </a>
             <div class="restaurants__info">
@@ -155,10 +164,21 @@
     <section class="terrasse">
       <h2>Venez déguster nos pizzas en terrasse</h2>
       <div class="imgTerrasseContainer">
-        <img
-          src="./MaquettesOhmyfood/images/terrasse.webp"
-          alt="image de la terrasse de l'établissement"
-        />
+        <picture>
+          <source
+            media="(max-width:800px)"
+            srcset="./MaquettesOhmyfood/images/terrasse_mob.webp"
+          />
+          <source
+            media="(min-width:801px)"
+            srcset="./MaquettesOhmyfood/images/terrasse.webp"
+          />
+
+          <img
+            src="./MaquettesOhmyfood/images/terrasse.webp"
+            alt="image de la terrasse de l'établissement"
+          />
+        </picture>
       </div>
     </section>
     <section class="events">
@@ -172,10 +192,24 @@
     <!--FOOTER-->
     <footer>
       <div class="footerContainer">
-        <div class="copyright">&#169; Copyright 2022</div>
-        <div class="footer__container">
-          <a href="mailto:larbidaouadjimohamed8@gmail.com"> contacts </a>
+
+        <div class="contactUs">
+          <p>Contactez nous :</p>
+          <p>
+            07.66.69.44.79 <br />
+            43 rue château payan 13005 Marseille <br />
+            larbidaouadjimohamed8@gmail.com
+          </p>
         </div>
+        <div class="reseau">
+          <p>Suivez nous :</p>
+          <div class="iconContainer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+          </div>
+
+        
       </div>
     </footer>
 
